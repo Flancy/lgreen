@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "FuturaPT-Medium";
+  src: url("./fonts/FuturaPT-Medium.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/FuturaPT-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/FuturaPT-Medium.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/FuturaPT-Medium.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/FuturaPT-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/FuturaPT-Medium.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/FuturaPT-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

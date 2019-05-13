@@ -1,0 +1,1072 @@
+@font-face {
+  font-family: "FuturaPT-Light";
+  src: url("./fonts/FuturaPT-Light.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/FuturaPT-Light.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/FuturaPT-Light.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/FuturaPT-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/FuturaPT-Light.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/FuturaPT-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaPT-Demi";
+  src: url("./fonts/FuturaPT-Demi.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/FuturaPT-Demi.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/FuturaPT-Demi.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/FuturaPT-Demi.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/FuturaPT-Demi.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/FuturaPT-Demi.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/FuturaPT-Demi.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaPT-Medium";
+  src: url("./fonts/FuturaPT-Medium.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/FuturaPT-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/FuturaPT-Medium.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/FuturaPT-Medium.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/FuturaPT-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/FuturaPT-Medium.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/FuturaPT-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1190px;
+  }
+  .navbar {
+    width: 1190px;
+  }
+}
+a, p, h1, h2, h3, h4
+    font-weight normal !important
+
+//Buttons, links 
+.btn
+    height auto 
+    line-height 1
+    width auto
+    background #d73b84
+    border none
+    border-radius 0
+    padding 12px 35px
+    color #ffffff
+    box-shadow 0 0 33px rgba(0,0,0,0.2)
+    font-size 20px
+    font-family "FuturaPT-Demi"
+    &:hover, &:active, &:focus
+        color #fff
+        background #e25588
+//Form
+::-webkit-input-placeholder {color:#4c4c4c;}
+::-moz-placeholder {color:#4c4c4c;}
+:-moz-placeholder {color:#4c4c4c;}
+:-ms-input-placeholder {color:#4c4c4c;}
+.form__input
+    display block
+    width 100%
+    background-color #fff
+    border 1px solid #cccccc
+    padding 17px 15px 
+    color #000
+    margin-bottom 30px
+    font-family "FuturaPT-Light"
+    font-size 18px
+    &:focus
+        border-color #d73b84
+    &.form__textarea
+        resize none
+        height 145px
+//Header
+.navbar
+    margin 0 auto
+    padding-top 15px
+    padding-bottom 15px
+.navbar-light .navbar-nav .nav-link
+    color #000000 !important
+    font-size 18px
+    font-family "FuturaPT-Light"
+    padding-left 15px
+    padding-right 15px
+    &:hover, &:active
+        text-decoration underline
+.navbar-brand
+    margin-right 65px
+//Home
+.home 
+    position relative
+    background url('../img/content/bg_1.jpg') center center no-repeat
+    background-size cover
+    overflow hidden
+    .h1-text 
+        margin-top 60px
+        line-height 1
+        margin-bottom 20px
+        color #000000
+        font-size 55px
+        font-family "FuturaPT-Demi"
+        .h1-text__light
+            display block
+            margin 5px 0 15px 0
+            font-size 40px
+            font-family "FuturaPT-Light"
+        .h1-text__pink
+            display block
+            color #a31c5b
+    .text
+        color #91949d
+        font-size 25px
+        font-family "FuturaPT-Medium"
+        line-height 1.2
+        margin-bottom 25px
+    .item 
+        font-size 0
+        margin-bottom 25px
+        .item__ico
+            display inline-block
+            vertical-align middle
+        .item__text
+            margin-bottom 0
+            line-height 1.3
+            width 90%
+            display inline-block
+            vertical-align middle
+            padding-left 20px
+            color #4c4c4c
+            font-size 18px
+            font-family "FuturaPT-Light"
+            b 
+                font-family "FuturaPT-Demi"
+    .first-screen .btn 
+        margin-bottom 40px
+        padding-left 50px
+        padding-right 50px
+    .img-scroll
+        display block
+        margin-bottom 25px
+    .img-models
+        position absolute
+        top 125px
+        right -115px
+//Call to action
+.call-to-action
+    background-color #fff
+    padding 160px 0
+    position relative
+    .row 
+        position relative
+    .img-models
+        display block
+        position absolute
+        left -150px
+        bottom -110px
+    .hr
+        background-color #000000
+        content " "
+        width 125px
+        height 1px
+        display block
+        position absolute
+        bottom 150px
+        left 50%
+        margin-left -115px
+        z-index 100
+    .img-bg
+        position absolute
+        top 50%
+        left 50%
+        margin-left -1030px
+        margin-top -233px
+    .h2-text
+        margin-top 130px
+        margin-bottom 130px
+        padding-left 45%
+        color #000000
+        font-size 40px
+        font-family "FuturaPT-Medium"
+        line-height 1.2
+        position relative
+        z-index 100
+    .btn 
+        margin 5px auto 30px auto 
+        padding-right 45px
+        padding-left 45px
+    .text 
+        font-family "FuturaPT-Light"
+        font-size 15px
+        color #999999
+        .text__link
+            text-decoration underline
+            color #999999
+            &:hover, &:active 
+                text-decoration none
+    .col-sm_right
+        padding-left 40px
+    &.call-to-action__two
+        .img-models
+            bottom -2px
+//Description
+.description
+    width 1280px
+    margin 0 auto
+    background-color #f0f0f4
+    .row
+        padding 50px 0
+        position relative
+    .h2-text 
+        color #000000
+        font-size 40px
+        font-family "FuturaPT-Medium"
+        line-height 1.2
+        margin-bottom 25px
+        .h2-text__pink
+            color #ff6699
+    .text
+        color #91949d
+        font-size 25px
+        font-family "FuturaPT-Medium"
+        line-height 1.2
+        margin-bottom 25px
+    .item 
+        font-size 0
+        margin-bottom 25px
+        .item__ico
+            display inline-block
+            vertical-align middle
+        .item__text
+            margin-bottom 0
+            line-height 1.3
+            width 90%
+            display inline-block
+            vertical-align middle
+            padding-left 20px
+            color #4c4c4c
+            font-size 18px
+            font-family "FuturaPT-Light"
+            b 
+                font-family "FuturaPT-Demi"
+    .img-models
+        position absolute
+        bottom 0
+        right 0
+//Advantage
+.advantage
+    padding-top 65px
+    padding-bottom 40px
+    .h2-text 
+        margin-bottom 30px
+        color #000000
+        font-size 40px
+        font-family "FuturaPT-Medium"
+        line-height 1
+    .text 
+        margin-bottom 45px
+        color #91949d
+        font-size 30px
+        font-family "FuturaPT-Medium"
+        line-height 1
+        .text__pink
+            color #ff6699
+    .col-sm
+        margin-bottom 25px
+    .col-sm_img
+        flex-grow 0
+        flex-shrink 0
+        flex-basis 400px
+    .item
+        align-items center
+        width 100%
+    .content 
+        .text-head 
+            font-family "FuturaPT-Demi"
+            color #000000
+            font-size 25px
+            line-height 1
+            margin-bottom 20px
+        .text 
+            font-size 18px
+            color #4c4c4c
+            margin-bottom 0
+            line-height 1.2
+            font-family "FuturaPT-Light"
+//Gallery
+.gallery
+    .row_gallery
+        display flex
+    .h2-text 
+        width 100%
+        display block
+        text-align center
+        margin 0 auto 40px auto
+        color #000000
+        font-size 40px
+        font-family "FuturaPT-Medium"
+        line-height 1
+    .text
+        width 100%
+        display block
+        text-align center
+        margin 0 auto 40px auto
+        color #91949d
+        font-size 30px
+        font-family "FuturaPT-Medium"
+        line-height 1
+    .link 
+        display block
+        margin-bottom 60px
+//FAQ
+.faq
+    .h2-text
+        width 100%
+        display block
+        text-align center
+        margin 0 auto 30px auto
+        color #000000
+        font-size 40px
+        font-family "FuturaPT-Medium"
+        line-height 1
+    .wrap
+        width 750px
+        margin 0 auto 140px auto
+        border-top 1px solid #cccccc
+    .item 
+        border-bottom 1px solid #cccccc
+        &.active 
+            .item-body
+                opacity 1
+                display block
+                height auto
+    .item-head
+        padding 25px 0
+        position relative
+        .text
+            margin-bottom 0
+            font-size 22px
+            color #000000
+            font-family "FuturaPT-Demi"
+            cursor pointer
+        .img-arrow
+            position absolute
+            top 50%
+            right 0
+            cursor pointer
+            margin-top -7.5px
+    .item-body
+        opacity 0
+        display none
+        padding-bottom 25px
+        font-size 18px 
+        color #4c4c4c
+        font-family "FuturaPT-Light"
+        transition all 0.3s ease-in-out
+//Contacts
+.contacts
+    .h2-text 
+        width 100%
+        display block
+        margin 0 auto 40px auto
+        color #000000
+        font-size 40px
+        font-family "FuturaPT-Medium"
+        line-height 1
+    .col-sm 
+        margin-bottom 45px
+    .round
+        display inline-block
+        vertical-align middle
+        border-radius 50%
+        background-color #ffffff
+        line-height 75px
+        width 75px 
+        text-align center
+        box-shadow 0 3px 12px rgba(0,0,0,0.2)
+        .img-fluid
+            display inline-block
+            vertical-align middle 
+    .link
+        margin-left 15px
+        display inline-block
+        vertical-align middle
+        color #4c4c4c
+        font-size 22px
+        font-family "FuturaPT-Medium"
+        line-height 1
+    .link_phone
+        margin-left 15px
+        display inline-block
+        vertical-align middle
+        color #4c4c4c
+        font-size 18px
+        font-family "FuturaPT-Light"
+        line-height 1
+        text-decoration none
+        border-bottom 1px dashed #4c4c4c
+        &:hover, &:active 
+            border-bottom none
+    .text
+        margin-bottom 0
+        margin-left 15px
+        width 70%
+        display inline-block
+        vertical-align middle
+        color #4c4c4c
+        font-size 18px
+        font-family "FuturaPT-Light"
+        line-height 1.2
+//Footer
+.footer
+    .row 
+        height 130px
+        align-items center
+    .text
+        margin-bottom 0
+        color #000000
+        font-size 18px
+        font-family "FuturaPT-Light"
+        line-height 1
+        .text__ico
+            display inline-block
+            vertical-align middle 
+            max-width 50px
+            margin-right 10px
+            margin-top -2px
+//Advantage Two
+.advantage-two
+    padding-bottom 80px
+    margin-bottom 80px
+    padding-top 200px
+    overflow hidden
+    .col-sm_wrap
+        max-width 780px
+        position relative 
+        z-index 100
+    .h2-text
+        color #000000
+        font-size 40px
+        font-family "FuturaPT-Medium"
+        line-height 1
+    .round 
+        display inline-block
+        vertical-align middle
+        border-radius 50%
+        background-color #ffffff
+        line-height 75px
+        width 75px 
+        text-align center
+        box-shadow 0 3px 12px rgba(0,0,0,0.2)
+        position relative
+        .img-fluid
+            display inline-block
+            vertical-align middle 
+        .number 
+            position absolute
+            border-radius 50%
+            top -10px 
+            right -13px
+            width 35px
+            line-height 35px
+            background-color #e25588
+            font-family "FuturaPT-Medium"
+            font-size 20px
+            color #ffffff
+            text-align center
+    .content 
+        width 78%
+        display inline-block
+        vertical-align middle
+        padding-left 20px
+    .text-head
+        font-family "FuturaPT-Demi"
+        font-size 22px
+        color #000000
+        margin-bottom 10px
+        line-height 1
+    .text
+        font-family "FuturaPT-Light"
+        font-size 18px
+        color #4c4c4c
+        line-height 1.1
+        margin-bottom 0
+    .row
+        position relative
+    .img-bg
+        position absolute
+        top 50%
+        left 50%
+        margin-left 250px
+        margin-top -200px
+    .img-models
+        position absolute
+        right -120px
+        top -174px
+    .item 
+        margin-bottom 45px
+//Calculator
+.calculator
+    padding-top 40px
+    padding-bottom 40px
+    .row_bg
+        padding-left 45px
+        padding-right 45px
+        border 5px solid #f1f2f6
+    .h2-text 
+        width 100%
+        text-align center
+        margin-top 60px
+        margin-bottom 45px
+        color #000000
+        font-size 40px
+        font-family "FuturaPT-Medium"
+        line-height 1
+    .text
+        width 100%
+        text-align center
+        margin-bottom 45px
+        color #91949d
+        font-size 30px
+        font-family "FuturaPT-Medium"
+        line-height 1
+    .text-sub
+        color #4c4c4c
+        font-size 18px
+        font-family "FuturaPT-Medium"
+        line-height 1
+        margin-bottom 20px
+    .btn 
+        display inline-block
+        margin 35px auto 40px auto
+        padding-left 90px
+        padding-right 90px
+    .text-calc
+        width 100%
+        text-align center
+        color #91949d
+        font-size 20px
+        font-family "FuturaPT-Demi"
+        line-height 1
+        margin-bottom 60px
+        b 
+            margin-right 23px
+            font-size 22px
+            color #4d4d4d
+    .checks
+        width 100%
+        display block
+        text-align center
+        .text-sub
+            margin-bottom 0
+            display: inline-block
+            vertical-align middle 
+            padding-right 50px
+        .label-check
+            margin-bottom 0
+            display: inline-block
+            vertical-align middle 
+            padding-right 30px
+        .label-check__input
+            margin-top -2px
+            display: inline-block
+            vertical-align middle 
+            margin-right 10px
+            width 20px
+            height 20px
+    .irs--flat .irs-bar
+        background-color #e25588
+    .irs--flat .irs-min, .irs--flat .irs-max
+        display none
+    .irs--flat .irs-handle
+        width 25px
+        height 25px
+        border-radius 50%
+        background-color #ffffff
+        border 5px solid #e25588
+        top 18px
+        i  
+            display none
+    .irs--flat .irs-single
+        padding 5px 10px
+        font-size 18px
+        color #4c4c4c
+        font-family "FuturaPT-Light"
+        background-color #fff
+        top auto 
+        line-height 1
+        bottom -80px 
+        border 1px solid #d3d7e3
+    .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before
+        left 50%
+        top -10px
+        margin-left -11px
+        z-index 100
+        display block
+        content " "
+        border none
+        background url('../img/ico/triangle.jpg') center center no-repeat
+        background-size contain
+        width 20px
+        height 10px
+//Remodal
+.remodal
+    max-width 580px
+    .remodal-close:before
+        display none
+    .remodal-close
+        left auto 
+        right -35px
+        top -35px
+        width 25px
+        height 25px
+        outline none !important
+        transition all 0.3s ease-in-out
+        &:hover, &:active 
+            opacity 0.7
+    &.remodal-thanks
+        height 530px
+        background url('../img/content/modal.jpg') center center no-repeat
+        background-size cover
+        padding 35px
+    .text-head 
+        margin-top 20px
+        font-size 40px
+        color #000000
+        font-family "FuturaPT-Medium"
+        margin-bottom 35px
+        line-height 1
+    .text 
+        font-size 30px
+        color #000000
+        font-family "FuturaPT-Medium"
+        margin-bottom 45px
+        line-height 1.2
+    &.remodal-order
+        padding 15px 35px 35px 35px
+        .text-head 
+            line-height 1.2
+        .text 
+            margin 20px 0 0 0
+            font-family "FuturaPT-Light"
+            font-size 15px
+            color #999999
+    .form__input
+        padding 12px 15px
+//Responsive
+@media only screen and (min-width: 1679px) {
+    .home .img-models {
+        right 0
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .home .img-models {
+        right -170px
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .home .img-models {
+        right: -370px;
+        top: 135px;
+    }
+    .call-to-action .img-models {
+        left: -150px;
+        bottom: -48px;
+        max-width: 420px;
+    }
+    .call-to-action .h2-text {
+        font-size: 31px;
+    }
+    .description .img-models {
+        right: -30px;
+        max-width: 480px;
+    }
+    .advantage-two .img-models {
+        right: -200px;
+        max-width: 430px;
+        top: -113px;
+    }
+    .advantage-two .content {
+        width: 65%;
+    }
+    .advantage-two .content br {
+        display: none;
+    }
+    .contacts .round {
+        width 70px
+        line-height 70px
+    }
+    .contacts .text {
+        width 68%
+    }
+    .navbar-brand {
+        margin-right 15px
+        max-width 140px
+    }
+    .navbar .btn {
+        padding 11px 20px
+        font-size 18px
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size 16px 
+        padding-left 12px
+        padding-right 12px
+    }
+    .description {
+        width: 100%
+        overflow: hidden
+    }
+    .call-to-action {
+        padding 60px 0
+    }
+    .navbar-light .navbar-toggler {
+        width: 40px;
+        height: 40px;
+        position relative
+    }
+    .navbar-light .navbar-toggler span {
+        width: 24px
+        position: absolute;
+        left 50%
+        margin-left -12px
+        height: 2px;
+        top: 50%;
+        overflow: hidden;
+        text-indent: 200%;
+        background-color #ccc
+    }
+    .navbar-light .navbar-toggler:before, .navbar-light .navbar-toggler:after {
+        width: 24px
+        left 50%
+        margin-left -12px
+        display: block;
+        content: "";
+        position: absolute;
+        background-color #ccc
+        top: 0;
+        height: 2px;
+        top: 50%;
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    .navbar-light .navbar-toggler:after {
+        top 30%
+    }
+    .navbar-light .navbar-toggler:before {
+        top auto
+        bottom 30%
+    }
+    .navbar-light .navbar-toggler.active:before {
+        top: 18px;
+    }
+    .navbar-light .navbar-toggler.active:after {
+        bottom: 18px
+        top auto
+    }
+    .navbar-light .navbar-toggler.active:before {
+        -webkit-transform: rotate3d(0,0,1,45deg);
+        transform: rotate3d(0,0,1,45deg);
+    }
+    .navbar-light .navbar-toggler.active span {
+        opacity: 0;
+    }
+    .navbar-light .navbar-toggler.active:after {
+        -webkit-transform: rotate3d(0,0,1,-45deg);
+        transform: rotate3d(0,0,1,-45deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home .img-models {
+        display: none
+    }
+    .home .h1-text {
+        margin-top 30px
+    }
+    .call-to-action {
+        padding 30px 0
+    }
+    .call-to-action .img-models {
+        display: none
+    }
+    .call-to-action .h2-text {
+        padding-left 0
+    }
+    .call-to-action .hr {
+        bottom 200px
+    }
+    .description .img-models {
+        display: none
+    }
+    .advantage-two .img-bg {
+        display none
+    }
+    .advantage-two {
+        padding 10px 0 80px 0
+        margin-bottom 10px
+    }
+    .advantage-two .content {
+        width 75%
+    }
+    .calculator .row_bg .row {
+        display: block
+    }
+    .calculator .row_bg .row .col-sm {
+        margin-bottom 70px
+        max-width 100%;
+        display block
+        width: 100%
+    }
+    .contacts .row {
+        text-align center
+    }
+    .contacts .text {
+        text-align center
+    }
+    .contacts .round {
+        display: block
+        margin 0 auto 20px
+        width 70px
+        line-height 70px
+    }
+    .footer .text {
+        font-size: 15px
+    }
+    .navbar-collapse,
+    .form-inline {
+        justify-content center
+        text-align center
+    }
+    .navbar-nav .btn {
+        margin auto
+        display inline-block
+    }
+    .advantage-two .img-models {
+        display: none
+    }
+    .faq .wrap {
+        width: 100%
+    }
+    .calculator .checks .text-sub {
+        width 100%
+        margin-bottom 15px
+        text-align cemter
+    }
+    .advantage .col-sm_img {
+        max-width 280px
+    }
+    .contacts .text,
+    .contacts .link {
+        width: 100%
+        margin-left 0
+        text-align center
+    }
+    .contacts .link_phone {
+        margin-left 0
+    }
+    .row_gallery {
+        flex-wrap nowrap
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .gallery .col-sm {
+        display: inline-flex
+        flex-grow 0
+        flex-shrink 0
+        flex-basis 85%
+    }
+    .gallery .link .img-fluid {
+        height auto
+    }
+    .home .first-screen .btn {
+        display: table
+    }
+}
+@media only screen and (max-width: 568px) {
+    .faq .wrap {
+        width: 90%
+        margin 0 auto 
+    }
+    .faq .item {
+        width: 100%
+        margin 0 auto 
+    }
+    .faq .item-head .img-arrow {
+        max-width 20px
+        margin-top -5px
+    }
+    #map iframe {
+        height 300px
+    }
+    .gallery .link {
+        margin-bottom 30px
+    }
+    .contacts .row,
+    .contacts .col-sm {
+        text-align center
+        display: block
+    }
+    br {
+        display: none
+    }
+    .home .h1-text {
+        font-size: 36px
+    }
+    .home .h1-text .h1-text__light {
+        font-size: 28px
+    }
+    .home .h1-text .h1-text__light {
+        margin-top 20px
+    }
+    .home .text {
+        font-size: 20px
+    }
+    .home .item .item__text {
+        width: 78%
+        font-size: 14px
+    }
+    .home .first-screen .btn {
+        margin 0 auto 40px auto
+    }
+    .home .img-scroll {
+        margin 0 auto 25px auto
+    }
+    .call-to-action .h2-text {
+        margin-top 0
+        margin-bottom 30px
+        text-align center
+    }
+    .description .h2-text,
+    .advantage .h2-text,
+    .advantage-two .h2-text,
+    .calculator .h2-text,
+    .faq .h2-text,
+    .contacts .h2-text {
+        text-align center
+        font-size: 31px
+    }
+    .call-to-action .hr {
+        display: none
+    }
+    .call-to-action .col-sm_right {
+        padding-left 15px
+    }
+    .description .item .item__text {
+        width: 78%;
+        padding-left: 15px;
+        font-size: 15px;
+    }
+    .advantage {
+        padding-top 30px
+    }
+    .description .text,
+    .advantage .text {
+        text-align center
+    }
+    .advantage .text {
+        font-size: 28px
+    }
+    .advantage .item {
+        display: table;
+    }
+    .advantage .col-sm_img img {
+        display: block
+        max-width 80%
+        margin 0 auto 30px auto
+    }
+    .advantage .col-sm_img {
+        display table-header-group
+    }
+    .advantage .col-sm .content {
+        display table-footer-group
+        width: 100%
+        text-align center !important
+    }
+    .call-to-action .img-bg {
+        display: none
+    }
+    .advantage-two .item {
+        margin-bottom 0
+        display: block
+    }
+    .advantage-two .item .col-sm {
+        margin-bottom 35px
+    }
+    .advantage-two .content {
+        width: 70%
+    }
+    .advantage-two {
+        padding-bottom 30px
+    }
+    .calculator .h2-text {
+        margin-top 30px
+    }
+    .calculator .row_bg {
+        padding-left 15px 
+        padding-right 15px
+    }
+    .calculator .text {
+        font-size: 28px
+    }
+    .calculator .text-sub {
+        text-align center
+    }
+    .calculator .btn {
+        padding-left 50px 
+        padding-right 50px
+    }
+    .calculator .text-calc b {
+        display block
+        margin-top 10px
+    }
+    .faq .item-head .text {
+        font-size: 18px
+    }
+    .faq .item-head {
+        padding 15px 0
+    }
+    .faq .wrap {
+        margin-bottom 30px
+    }
+    .contacts .row {
+        text-align left
+    }
+    .contacts .text {
+        font-size: 16px
+        width 67%
+    }
+    .footer {
+        text-align center !important
+    }
+    .footer .img-fluid {
+        max-width 140px
+    }
+    .remodal.remodal-order {
+        padding 15px !important
+    }
+    .remodal .text-head {
+        font-size: 28px
+        line-height 1.1
+        margin-bottom 20px
+    }
+    .remodal-wrapper {
+        padding: 25px 25px 0;
+    } 
+    .remodal .remodal-close {
+        top -25px
+        right -25px
+        width: 20px
+        height 20px
+    }
+    .remodal-close__ico {
+        max-width 100%
+    }
+}
